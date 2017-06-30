@@ -3,23 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <title></title>
+    <style>
+        body{
+            background-color: #59fcac;
+        }
+        .right{
+            float: right;
+            /*width: 15px;*/
+            height:32px;
+            position: relative;
+            margin-right: 30px;
+            margin-top: 20px;
+        }
+        .centerletter{
+            margin-left:45%;
+            margin-top: 13%;
+            float: left;
+        }
+        .title{
+            margin-left:35%;
+            margin-top: 30px;
+            font-size: 34px;
+             font-family: 隶书;
+            float: left;
+        }
+        .centent {
+            float: left;
+            margin-top: 10px;
+            font-family: 隶书;
+            /*font-family:Gibson,Helvetica Neue,HelveticaNeue,Helvetica,Arial,sans-serif;*/
+            font-size: 17px;
+            width: 700px;
+            margin-left: 32%;
+        }
+    </style>
 </head>
 <body>
-<script type="application/javascript">
+<!--<button type="button">登陆</button>-->
+<div class="right">
+    <a href="http://www.baidu.com" role="button">登陆</a>
+    <a href="http://www.sina.com" role="button">注册</a>
+</div>
+<div class="centerletter">
+    <img src="1.png" width="180px" height="180px" alt=""/>
+</div>
+<div>
+    <h1 class="title">Tumblr 用起来真是简单到难以解释。</h1>
+</div>
+<div class="centent">
+<p>
+    我们让创建博客和随心所欲发布内容的过程变得真的非常非常简单。故事、图片、GIF 动图、电视剧、链接、俏皮话、冷笑话、不冷的笑话、Spotify 的曲目、MP3、视频、时尚、艺术，以及有深度的内容。Tumblr 是 354 百万个不同的博客，实实在在地涵盖了所有内容。
+</p>
 
-    var a = Number(prompt("请输入年龄"));
-
-    if (a <= 12) {
-        alert("小学生");
-    }
-    else if (a <= 15 && a > 12) {
-        alert("初中生");
-    } else if (a <= 18 && a > 15) {
-        alert("高中生");
-    } else if (a > 18) {
-        alert("成年人");
-    }
-
-</script>
+</div>
 </body>
 </html>
