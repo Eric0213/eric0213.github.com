@@ -3,58 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <title></title>
-    <style>
-        body{
-            background-color: #59fcac;
-        }
-        .right{
-            float: right;
-            /*width: 15px;*/
-            height:32px;
-            position: relative;
-            margin-right: 30px;
-            margin-top: 20px;
-        }
-        .centerletter{
-            margin-left:45%;
-            margin-top: 13%;
-            float: left;
-        }
-        .title{
-            margin-left:35%;
-            margin-top: 30px;
-            font-size: 34px;
-             font-family: 隶书;
-            float: left;
-        }
-        .centent {
-            float: left;
-            margin-top: 10px;
-            font-family: 隶书;
-            /*font-family:Gibson,Helvetica Neue,HelveticaNeue,Helvetica,Arial,sans-serif;*/
-            font-size: 17px;
-            width: 700px;
-            margin-left: 32%;
-        }
-    </style>
 </head>
 <body>
-<!--<button type="button">登陆</button>-->
-<div class="right">
-    <a href="http://www.baidu.com" role="button">登陆</a>
-    <a href="http://www.sina.com" role="button">注册</a>
-</div>
-<div class="centerletter">
-    <img src="1.png" width="180px" height="180px" alt=""/>
-</div>
-<div>
-    <h1 class="title">Tumblr 用起来真是简单到难以解释。</h1>
-</div>
-<div class="centent">
-<p>
-    我们让创建博客和随心所欲发布内容的过程变得真的非常非常简单。故事、图片、GIF 动图、电视剧、链接、俏皮话、冷笑话、不冷的笑话、Spotify 的曲目、MP3、视频、时尚、艺术，以及有深度的内容。Tumblr 是 354 百万个不同的博客，实实在在地涵盖了所有内容。
-</p>
+<script>
 
-</div>
+    //画出上面的管子
+    var canvas = document.getElementById("canvas").getContext("2d");
+    var img  = new Image();
+    var img2 = new Image();img2.src = "images/bg.png";
+    img.src = "./images/pipe.png";
+
+    //    canvas.drawImage(img,150,500,150,800,0,0,100,200);
+
+    //鸟运动
+    var bird = new Image();
+    var i = 0;
+    var imgsrcArr = ["./images/0.gif", "./images/1.gif", "./images/2.gif"];
+    function birdfly() {
+//        bord.clearRect(0, 0, 400, 600);
+        i++;
+        i = i % 3;
+        bird.src = imgsrcArr[i];
+        canvas.drawImage(bird, 150, 250, 40, 32);
+    }
+    //让管子移动
+
+    var upPipX = 400;
+
+    setInterval(function () {
+        if( upPipX < -100){
+            upPipX = 400;
+        }
+        canvas.clearRect(0,0,400,600);
+        upPipX = upPipX - 3;
+
+        canvas.drawImage(img2, 0, 0, 400, 600);
+        canvas.drawImage(img,150,500,150,800,upPipX,0,100,200);
+
+    },80);
+    setInterval(birdfly,80);
+
+</script>
 </body>
 </html>
