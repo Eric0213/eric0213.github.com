@@ -1,48 +1,211 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title></title>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+	<style>
+
+
+	 	/*预先设置好的一些选择器*/
+		*{
+			padding: 0;
+			margin: 0;
+		}
+	    .cl{
+	     	clear: both;	
+	    }
+	    .h10{
+	    	height: 10px;
+	    }
+	    a{
+	     	text-decoration: none;
+	     }
+		ul{
+			list-style: none;
+		}
+
+
+		/*这里是顶部*/
+		.top{
+			height: 50px;
+			background-color: #EECBAD;
+		}
+/*		.account{
+			float: right;
+		}*/
+		.top1{
+			height: 23px;
+			background-color: gray;
+		}
+		.img{
+			float: left;
+			margin-top: 20px;
+			padding-top: 20px;
+			margin-left: 60px;
+		}
+
+
+		/*这是菜单栏*/
+		.box1{
+			width: 1200px;
+			/*height: 400px;*/
+			margin: 0 auto;
+			margin-top: 30px;
+		}
+		.box1 ul li{
+				width: 100px;
+				height: 100px;
+				float: left;
+				margin-left: 20px;
+			}
+		.box1 ul li a{
+				color: black;
+				
+				line-height: 100px;
+				height: 100px;
+				display: block;
+			}
+		.box1 ul li a:hover{
+				color: orange;
+			}
+
+
+        /*左边部分*/
+		.box2{
+			width: 250px;
+			height: 720px;
+			/*border: 1px solid gray;*/
+			background-color: gray;
+			padding-top: 10px;
+			margin-left: 60px;
+			float: left;
+		}
+        .box2 ul li{
+        	width: 250px;
+        	height: 50px;
+        	margin-top: 20px;
+        }
+        .box2 ul li a{
+            height: 50px;
+            width: 250px;
+        	color: white;
+        	display: block;
+        	line-height: 50px;
+        	text-align: center;
+        }
+        .box2 ul li a:hover{
+        	background-color: orange;
+        }
+
+
+        /*插入的一张图片当main*/
+        .box3{
+        	float: left;
+        }
+
+
+        /*这是底部写的内容*/
+        .buttom{
+        	height: 200px;
+        	width: 1450px;
+        	float: left;
+        	background-color: pink;
+        	margin-left: 60px;
+        }
+        .help1, .help2, .help3, .help4{
+        	width: 160px;
+        	height: 112px;
+        	float: left;
+        	margin-left: 170px;
+        	margin-top: 20px;
+        }
+        dt{
+             font: 600 16px/80px "微软雅黑";
+        }
+        dd{
+			font: 200 14px/24px "微软雅黑";
+        }
+	</style>
 </head>
 <body>
-<script>
+<!-- 这是顶部效果 -->
+<div class="top">
+<!-- <div class="account">
+	<form>
+		账号：<input type="text" />密码：<input type="password" />
+		<br />
+		<input type="button" value="登陆"/> 
+		<input type="submit" />
+	</form>
+</div> -->
+</div>
+<div class="top1"></div>
 
-    //画出上面的管子
-    var canvas = document.getElementById("canvas").getContext("2d");
-    var img  = new Image();
-    var img2 = new Image();img2.src = "images/bg.png";
-    img.src = "./images/pipe.png";
+                   <!-- 这是头部效果 -->
+<div class="cl h10"></div>
+	<!-- 插入的小图片 -->
+<div class="img"><img src="mi2.png" alt="" /></div>
+	<div class="box1">
+		<ul>
+			<li><a href="https://www.mi.com/buyphone/">小米手机</a></li>
+			<li><a href="https://www.mi.com/mibookair/">红米</a></li>
+			<li><a href="https://www.mi.com/buytv/">平板·笔记本</a></li>
+			<li><a href="https://www.mi.com/smart/">电视</a></li>
+			<li><a href="">盒子影音</a></li>
+			<li><a href="">路由器</a></li>
+			<li><a href="">智能硬件</a></li>
+			<li><a href="">服务</a></li>
+			<li><a href="">社区</a></li>
+		</ul>
+	</div>
+	               <!-- 这是左侧效果 -->              
+	<div class="cl h10"></div>
+	<div class="box2">
+		<ul>				
+			    <li><a href="">手机  电话卡&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp＞</a></li>
+				<li><a href="">笔记本  平板&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp＞</a></li>
+				<li><a href="">电视  盒子&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp＞</a></li>
+				<li><a href="">路由器  智能硬件&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp＞</a></li>
+				<li><a href="">移动电源 电池 插线板&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp＞</a></li>
+				<li><a href="">耳机 音响&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp＞</a></li>
+				<li><a href="">保护套  贴膜&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp＞</a></li>
+				<li><a href=""> 咸菜 支架 存储卡&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp＞</a></li>
+				<li><a href="">箱包 服饰 鞋 眼镜&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp＞</a></li>
+				<li><a href="">米兔 生活周边&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp＞</a></li>	
+		</ul>
+	</div>
 
-    //    canvas.drawImage(img,150,500,150,800,0,0,100,200);
-
-    //鸟运动
-    var bird = new Image();
-    var i = 0;
-    var imgsrcArr = ["./images/0.gif", "./images/1.gif", "./images/2.gif"];
-    function birdfly() {
-//        bord.clearRect(0, 0, 400, 600);
-        i++;
-        i = i % 3;
-        bird.src = imgsrcArr[i];
-        canvas.drawImage(bird, 150, 250, 40, 32);
-    }
-    //让管子移动
-
-    var upPipX = 400;
-
-    setInterval(function () {
-        if( upPipX < -100){
-            upPipX = 400;
-        }
-        canvas.clearRect(0,0,400,600);
-        upPipX = upPipX - 3;
-
-        canvas.drawImage(img2, 0, 0, 400, 600);
-        canvas.drawImage(img,150,500,150,800,upPipX,0,100,200);
-
-    },80);
-    setInterval(birdfly,80);
-
-</script>
+	<!-- 插入了一张大图片 -->
+	<div class="box3">
+		<a href="https://www.mi.com/mitv4A/32/" target="_blank"><img src="main.jpg" alt="" width="1200px" height="730px" /></a>
+	</div>
+	              <!-- 这是底部的内容 -->
+	<div class="cl h10"></div>
+	<div class="buttom">
+		<dl class="help1">
+			<dt>帮助中心</dt>
+			<dd>账户管理</dd>
+			<dd>购物指南</dd>
+			<dd>订单中心</dd>
+		</dl>
+		<dl class="help2">
+			<dt>服务支持</dt>
+			<dd>售后政策</dd>
+			<dd>自助服务</dd>
+			<dd>相关下载</dd>
+		</dl>
+		<dl class="help3">
+			<dt>线下门店</dt>
+			<dd>小米之家</dd>
+			<dd>服务网点</dd>
+			<dd>零售网点</dd>
+		</dl>
+		<dl class="help4">
+			<dt>关于小米</dt>
+			<dd>了解小米</dd>
+			<dd>加入小米</dd>
+			<dd>联系我们</dd>
+		</dl>
+	</div>
 </body>
 </html>
